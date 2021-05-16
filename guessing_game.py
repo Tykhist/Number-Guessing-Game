@@ -19,8 +19,10 @@ def guesser():
   elif tries == 4:
     print("Alright, you're done. The answer was " + str(correct_guess) + ". Get outta here!")
     print("You were about, uhhhh... " + str(user_input - correct_guess) " off")
+    tries += 1
   elif tries > 4:
     print("Why are you still guessing? Re-run the file if you want to try again.")
+    tries += 1
   else:
     print("What did you do?...")
    
